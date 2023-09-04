@@ -5,7 +5,7 @@ import { EvilIcons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons'; 
 import { Octicons } from '@expo/vector-icons';
-const VideoListLikes = () => {
+const VideoListLikes = ({comment}) => {
     const onShare = async () => {
         try {
           const result = await Share.share({
@@ -28,9 +28,7 @@ const VideoListLikes = () => {
     const [like,setLike]=useState(false);
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false}  style={{flexDirection:'row'}}>
-      <TouchableOpacity onPress={()=> {setLike(!like)
-        fadeIn}
-    }>
+      <TouchableOpacity onPress={()=>setLike(!like)    }>
         <View style={{backgroundColor:'#000', borderWidth:1, borderColor:'grey', flexDirection:'row', justifyContent:'center', 
         alignItems:'center', marginHorizontal:10,paddingHorizontal:10,paddingVertical:4, width:90, borderRadius:20}}>
         <Animated.View>
@@ -39,7 +37,7 @@ const VideoListLikes = () => {
         <Text style={{marginLeft:5, color:'grey'}}>705k</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={comment}>
         <View style={{backgroundColor:'#000', borderWidth:1, borderColor:'grey', flexDirection:'row', justifyContent:'center', 
         alignItems:'center', marginHorizontal:10,paddingHorizontal:10,paddingVertical:4, width:120, borderRadius:20}}>
         <EvilIcons name="comment" size={24} color="grey" />

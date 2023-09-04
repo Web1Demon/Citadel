@@ -20,8 +20,8 @@ const Login = ({navigation}) => {
   return (
     <View style={{marginTop:100,}}>
       <View style={{gap:20, marginLeft:20}}>
-          <Text style={{fontWeight:'600',fontSize:30}} >Welcome, Log in</Text>
-          <Text style={{fontSize:16,marginLeft:0,fontWeight:'400'}}>Log in with the following options</Text>
+          <Text style={{fontWeight:'600',fontSize:30,color:'#fff'}} >Welcome, Log in</Text>
+          <Text style={{fontSize:16,marginLeft:0,fontWeight:'400',color:'#fff'}}>Log in with the following options</Text>
       </View>
       <View   style={{flexDirection:'row', marginLeft:40,marginTop:20}} >
       <TouchableOpacity  style={{backgroundColor:'#B0AFEC', borderRadius:9, padding:15}} >
@@ -61,7 +61,7 @@ const Login = ({navigation}) => {
     <View style={{marginHorizontal:20,gap:20,}}>
     <Buttons name={'Log in'} color={isValid? '#02006C':'#75749c'} onpress={handleSubmit} disabled={!isValid}/>
      <TouchableOpacity onPress={()=> navigation.navigate('signup')}>
-       <Text style={{marginHorizontal:10,fontSize:16, width:'100%',textAlign:'center'}}>Don't have an account? <Text style={{color:'#02006C',textDecorationLine:'underline'}}>Sign up</Text></Text>
+       <Text style={{marginHorizontal:10,fontSize:16, width:'100%',textAlign:'center',color:'#fff'}}>Don't have an account? <Text style={{color:'#02006C',textDecorationLine:'underline'}}>Sign up</Text></Text>
      </TouchableOpacity>
      </View>
      </View>

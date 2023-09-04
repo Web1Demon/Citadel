@@ -165,7 +165,7 @@ const Main = () => {
           headerStyle:{backgroundColor:'#000'},
           headerLeft: () => (
             <View> 
-              <Text style={{color:'grey',marginLeft:30,fontSize:30,fontFamily:'DanceScript',}}>Citadel</Text>
+              <Text style={{color:'#02006C',marginLeft:30,fontSize:40,fontFamily:'DanceScript'}}>Citadel</Text>
             </View>
           ),
           title: "",

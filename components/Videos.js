@@ -38,7 +38,7 @@ const Videos = ({
         borderRadius: 10,
       }}
     >
-      <TouchableOpacity onPress={() => navigation.navigate("video")}>
+      <TouchableOpacity onPress={() => navigation.navigate("video",{item})}>
         <Image
           source={{ uri: item.image }}
           style={{
@@ -94,7 +94,7 @@ const Videos = ({
                 <Text
                   style={{ fontSize: 18, fontWeight: "bold", color: "#fff" }}
                 >
-                  {item.title}
+                  {item.title? item.title.slice(0,20) +  '...': item.title.toLowerCase()}
                 </Text>
                 {text ? (
                   <View style={{ flexDirection: "row", alignItems: "center" }}>

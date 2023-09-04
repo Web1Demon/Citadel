@@ -68,6 +68,7 @@ const Home = () => {
                     left={150}
                     icons={true}
                     onpress={OpenThreeColumn}
+                    
                   />
                 )}
               />
@@ -76,7 +77,7 @@ const Home = () => {
 
           <View>
             <Text style={{ textAlign: "center", fontSize: 17, color: "#fff" }}>
-              Subscribed Vidoes
+              Subscribed Videos
             </Text>
             <View style={{ marginTop: 10 }}>
               <FlatList

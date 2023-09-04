@@ -12,13 +12,13 @@ const HeaderLeft = () => {
     <View style={{flexDirection:'row', marginHorizontal:20,alignItems:'center',justifyContent:'center'}}>
 
     <TouchableOpacity onPress={()=>navigation.navigate('welcome')}>
-    <AntDesign name="search1" size={24} color="#fff" />
+    <AntDesign name="search1" size={20} color="#fff" />
     </TouchableOpacity>
     <TouchableOpacity>
-    <Entypo name="notification" size={24} color="#fff" style={{marginHorizontal:10}} />
+    <Entypo name="notification" size={20} color="#fff" style={{marginHorizontal:10}} />
     </TouchableOpacity>
     <TouchableOpacity>
-    <Ionicons name="person" size={24} color="#fff" />
+    <Ionicons name="person" size={20} color="#fff" />
     </TouchableOpacity>
 
     </View>
